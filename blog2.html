@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <link href="https://fonts.googleapis.com/css?family=Montserrat:500|Righteous|Sniglet" rel="stylesheet">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+   <script type="text/javascript" src="firebase.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+   <title>HappyTummy Blog 2</title>
+ </head>
+ <body style="background-color: white;">
+   
+   <!-- Header with Site Name -->
+   <!-- <div class="container-fluid" style="background-color: #FAE3D9;">
+     <div class="row">
+         <div class="col-md-12 jumbotron text-center display-3" style="font-family: 'Montserrat'; background-color: #FAE3D9; color: #61C0BF;">
+           happyTummyHappyMind
+         </div>
+     </div>
+   </div> -->
+ 
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-xl container-fluid" style="color: white; background-color: #61C0BF; font-family: 'Montserrat';">
+       <!-- <div class="col-md-2 justify-content-end"> -->
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+         <a class="navbar-brand " href="index.html" style="color: white; font-family: 'Montserrat'; font-size: 50px;"><i class="far fa-smile-beam ml-3 animated bounce " ></i>   <span class="animated fadeIn delay-2s">HappyTummy</span></a>
+       <!-- </div> -->
+ 
+       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+           <li class="nav-item active">
+             <a class="nav-link ml-5 pl-4" href="index.html" style="color: white;">Home <span class="sr-only">(current)</span></a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link ml-3" href="blog.html" style="color: white;">Blog</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link ml-3" href="contact.html" tabindex="-1" aria-disabled="true" style="color: white;">Contact</a>
+           </li>
+         </ul>
+         <form class="form-inline my-2 my-lg-0">
+           <input class="form-control mr-sm-2 pr-5" style="color: gray;" type="search" placeholder="Search for Recipes" aria-label="Search">
+           <button class="btn btn-outline-info my-2 my-sm-0 mr-4" style="color: white;"  type="submit">Search</button>
+         </form>
+       </div>
+   </nav>
+ 
+       <!-- Brand New Container Starts (BODY) -->
+   <div class="container-fluid mt-3">
+       <div class="row">
+ 
+           
+ 
+           <div class="col-md-7 mt-3 mb-3 mr-4 ml-4  p-4 rounded-lg" style="background-color: rgba(250, 227, 217, 0.75); font-family: 'Montserrat';">
+ 
+             <div class="row">
+               <div class="col-md-12">
+                 <h2 class="display-5 text-center p-2" style="color:#61C0BF;">Breaking Down The Alkaline Diet</h2>
+               </div>
+             </div>
+ 
+               <div class="row">
+                 <div class="col-md-5">
+                     <img class="mr-3 ml-1 mb-2 mt-1" src="http://www.iyiyii.com/wp-content/uploads/2013/02/fruits-and-vegetables_1.jpg" width= 300 ALIGN="center;" style="border: 1px solid #61C0BF">
+                 </div>
+              
+                 <div class="col-md-7">
+               <p>  The alkaline diet is also known as the acid-alkaline diet or alkaline ash diet. It is rooted in the idea that the metabolism's functions leave behind waste, which, depending where it falls on the pH range, is either acidic or alkaline. Acidic residue in the body is thought to make one vulnerable to illness, while alkaline residue is thought to be protective. By choosing more alkaline foods, you should be able to "alkalize" your body and improve health.
+
+                <br><h4 class="text-center" style="color: #61C0BF;">Click for recipes featuring these high alkaline ingredients:</h4>
+                 <!---<ul class="columns" data-columns="2">-->
+                   <button class="btn" value="beet greens" style="border: none;">Beet Greens</button>
+                   <button class="btn" value="sweet potato" style="border: none;">Sweet Potato</button>
+                   <button class="btn" value="celery" style="border: none;">Celery</button>
+                   <button class="btn" value="cauliflower" style="border: none;">Cauliflower</button>
+                   <button class="btn" value="eggplant" style="border: none;">Eggplant</button>
+                   <button class="btn" value="spinach" style="border: none;">Spinach</button>
+                   <button class="btn" value="cherries" style="border: none;">Cherries</button>
+                   <button class="btn" value="pineapple" style="border: none;">Pineapple</button>
+                   <button class="btn" value="zucchini" style="border: none;">Zucchini</button>
+                   <button class="btn" value="swiss chard" style="border: none;">Swiss Chard</button>
+                   <button class="btn" value="carrots" style="border: none;">Carrots</button>
+                   <button class="btn" value="strawberries" style="border: none;">Strawberries</button>
+                   <button class="btn" value="apples" style="border: none;">Apples</button>
+                   <button class="btn" value="watermelon" style="border: none;">Watermelon</button>
+                   <button class="btn" value="banana" style="border: none;">Bananas</button>
+                       </p>
+                       <!---<button class="btn btn-block btn-lg btn-outline-info rounded-lg" id="seeProfiles">See Macronutrient Profiles</button>-->
+                  </div>
+               </div>
+           </div>
+ 
+           <div class="col-md-4 m-3 mb-3 p-4 rounded-lg" style="background-color: rgba(250, 227, 217, 0.75); font-family: 'Righteous';">
+               
+               <h3 class="display-5 text-center p-2 pb-3 ml-3 mr-3" style="color:#61C0BF; border-bottom: 3px solid #61C0BF">Happy Tummy Picks</h3>
+ 
+               <div id="picks" class="text-center p-2">
+
+               </div>
+
+               <a id="recipeImg" class="text-center p-2 justify-content-center"> </a>
+              
+ 
+           </div>
+ 
+       </div>
+ 
+       <!-- ADs API -->
+       <div class="row mb-5">
+           <div>
+ 
+               <!-- ADS CONTENT -->
+ 
+           </div>
+       </div>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   </div>
+ 
+      <!-- Footer -->
+ <footer class="page-footer font-small pt-4 text-secondary" style="background-color: #BBDED6;">
+ 
+   <!-- Footer Links -->
+   <div class="container-fluid text-center text-md-left">
+ 
+     <!-- Grid row -->
+     <div class="row">
+ 
+       <!-- Grid column -->
+       <div class="col-md-3 mt-md-0 mt-3 ">
+ 
+         <!-- Content -->
+         <h5 class="">HappyTummy</h5>
+           
+           <p>We strive to bring the yummiest and most interesting foods to the table.</p>
+         
+ 
+       </div>
+       
+       <!-- Stay Connected Column -->
+       <div class="col-md-3 mt-md-0 mt-3 mb-2">
+               <h5 class="text-uppercase">Stay Connected</h5>
+               <p>Sign-up for our Newsletter!</p>
+               <form class="form-inline my-2 my-lg-0 ">
+                 <input id="email-input" class="form-control mr-sm-2 mb-2" style="color: gray;" type="email" placeholder="e-mail" aria-label="email" value="">
+                 <br>
+                 <button id="submit" class="btn btn-block btn-outline-info my-2 my-sm-0 "  type="submit">Yes, Sign Me Up!</button>
+               </form>
+ 
+       </div>
+ 
+       <!-- Social Media -->
+       <div class="col-md-2 mt-md-0 mt-3">
+           <h5 class="text-uppercase">Social Media</h5>
+           <div class="pt-4">
+             <i class="fab fa-facebook-square" style="font-size: 40px;"></i>
+             <i class="fab fa-twitter-square" style="font-size: 40px;"></i>
+             <i class="fab fa-instagram" style="font-size: 40px;"></i>
+             <i class="fab fa-pinterest-square" style="font-size: 40px;"></i>
+           </div>
+       </div>
+       <!-- Grid column -->
+ 
+       <hr class="clearfix w-100 d-md-none pb-3">
+ 
+       <!-- Grid column -->
+       <div class="col-md-2 mb-md-0 mb-3">
+ 
+           <!-- Links -->
+           <h5 class="text-uppercase">Navigate</h5>
+ 
+           <ul class="list-unstyled">
+             <li>
+               <a class="text-secondary " href="index.html">Home</a>
+             </li>
+             <li>
+               <a class="text-secondary " href="blog.html">Blog</a>
+             </li>
+             <li>
+               <a class="text-secondary " href="contact.html">Contact</a>
+             </li>
+             <li>
+               <a href="#!"></a>
+             </li>
+           </ul>
+ 
+         </div>
+         <!-- Grid column -->
+ 
+         <!-- Grid column -->
+         <div class="col-md-2 mb-md-0 mb-3">
+ 
+           <!-- Links -->
+           <h5 class="text-uppercase">More For You</h5>
+ 
+           <ul class="list-unstyled">
+             <li>
+               <a class="text-secondary" href="#!">Events</a>
+             </li>
+             <li>
+               <a class="text-secondary" href="#!">Recipes</a>
+             </li>
+             <li>
+               <a class="text-secondary" href="#!">Promotions</a>
+             </li>
+             <li>
+               <a class="text-secondary" href="#!">Nutrition</a>
+             </li>
+           </ul>
+ 
+         </div>
+         <!-- Grid column -->
+ 
+     </div>
+     <!-- Grid row -->
+ 
+   </div>
+   <!-- Footer Links -->
+ 
+   <!-- Copyright -->
+   <div class="footer-copyright text-center py-3 text-white" style="background-color: #61C0BF;">© 2018 Copyright:
+     <a class="text-white" href="https://www.google.com"> HappyTummy.com</a>
+   </div>
+   <!-- Copyright -->
+ 
+ </footer>
+
+ <script src="bloglogic.js"></script>
+ 
+ </body>
+ </html>
+ 
